@@ -13,18 +13,25 @@
       <h2>People</h2>
       <ul class="list-group list-group-flush">
         <li class="list-group-item">
-          <code>Satha</code>
+          <span class="satha">Satha</span>
           - Mayor of Frosthaven, a sharp-featured human woman with a fighter's
           muscular build.
         </li>
+        <li class="list-group-item">
+          <span class="lanprul">Lanprul</span>
+          - Chieftain of the Algox Snowspeaker clan
+        </li>
       </ul>
-      <h2 class="mt-4">Flow</h2>
+      <h2 class="mt-4">Scenario's done</h2>
       <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item">Scenario 1</li>
-          <li class="breadcrumb-item">Scenario 2</li>
+          <li class="breadcrumb-item">1</li>
+          <li class="breadcrumb-item">2</li>
+          <li class="breadcrumb-item">4</li>
+          <li class="breadcrumb-item">7</li>
         </ol>
       </nav>
+      <a href="./assets/scenario.png" target="_blank">(open flowchart)</a>
       <hr />
       <article>
         <h1>Introduction</h1>
@@ -53,75 +60,372 @@
             awaits you upon arrival.</em
           >
         </p>
-      </article>
+      </article>      
 
-      
-
-      <article>
+      <article class="scenario">
         <h1>Scenario 1: A Town in Flames</h1>
         <p class="goal">
           <strong>Goal:</strong>
           kill all enemies
         </p>
-        <p>
-          As you approach, the cacophony of battle greets you, a symphony of
-          metal clashes and desperate cries. Despite the wind's roar, the
-          unmistakable signs of a skirmish signal proximity to the town.
+        <ul class="nav nav-pills mb-3" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active" data-bs-toggle="tab" href="#s1_summary" aria-selected="true" role="tab">Summary</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" data-bs-toggle="tab" href="#s1_story" aria-selected="false" role="tab" tabindex="-1">More story</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane fade active show" id="s1_summary" role="tabpanel">
+            <ul>
+              <li>
+                We came to look for Frosthaven
+              </li>
+              <li>
+                We found Frosthaven, in a fight with the Algox
+              </li>
+              <li>
+                We joined the fight, we won, Algox retreats, Frosthaven in ruins
+              </li>
+              <li>
+                <span class="satha">Satha</span> thanks us, says Merchant's Guild are twats, they caused it all by annoying the Algox
+              </li>
+              <li>
+                Scout followed retreating Algox, comes back with two options
+                <ol>
+                  <li>Follow the group that entered the cave - <span class="text-warning-emphasis">Scenario 3</span></li>
+                  <li>Follow the gruop that split off and hiked around the mountain - <span class="text-warning-emphasis">Scenario 2</span></li>
+                </ol>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-pane fade" id="s1_story" role="tabpanel">
+            <p>
+              As you approach, the cacophony of battle greets you, a symphony of
+              metal clashes and desperate cries. Despite the wind's roar, the
+              unmistakable signs of a skirmish signal proximity to the town.
+            </p>
+            <p>
+              Urgency propels you forward, your wearied body propelled by the
+              promise of civilization. With each step, the tumult grows louder,
+              illuminated by the flickering orange glow of flames dancing in the
+              air. Finally, rounding the bend, Frosthaven emerges, engulfed in
+              infernal chaos.
+            </p>
+            <p>
+              Fire engulfs buildings, and panicked townsfolk flee from the onslaught
+              of a monstrous Algox raider, its massive form wreathed in thick fur
+              and crowned with formidable horns.
+              <br />
+              Amidst the chaos, despair grips a nearby porter, lamenting their
+              seemingly futile journey.
+              <br />Yet, as the Algox demonstrates its terrifying strength, flinging
+              a hapless victim aside, resolve surges within you. Ten days of arduous
+              trekking have led to this pivotal moment. <br />With determination,
+              you ready your weapon, bracing for the harrowing battle ahead.
+            </p>
+            <h2 class="mt-4 text-warning-emphasis">Conclusion</h2>
+            <p>
+              After fighting relentlessly, the Algox retreat, scurrying from
+              Frosthaven like giant white mice. 
+              <br/>
+              One of the townspeople (<code>Satha</code>) marches right for you to thank you for your help.
+              <br/>
+              You explain who you are and that you were sent from White Oak. 
+              This visibly annoys <code>Satha</code> because she thinks help from the
+              capital was long overdue as it was the Merchant's Guild that stuck
+              their noses in Frosthaven's business, and started this whole mess. 
+              </p>
+              <p>
+              She goes on to explain that last summer, the Merchant's Guild sent people
+              to Frosthaven to check how it could be "of more use to the empire".
+              <br/>
+              One of their expeditions messed with an Algox burial site, and the
+              next thing they knew, angry Algox started attacking Frosthaven. The
+              people from the Merchant's Guild high-tailed it out of there and left
+              only a handful of soldiers behind to help. 
+              </p>
+              <p>
+              <code>Satha</code> has sent a scout ahead to follow the retreating Algox to their hideout(s). 
+              <br/>
+              Upon the return of the scout, he gives you two options to continue the journey: 
+              <ol>
+                <li>
+                  A group of Algox entered a cave at the base of Snowscorn Mountain (Scenario 3)
+                </li>
+                <li>
+                  A smaller group split off and hiked around the mountain, a suspected secret entrance to the Algox stronghold (Scenario 2)
+                </li>
+              </ol>
+            </p>
+            
+          </div>
+        </div>
+      </article>
+
+      <article class="scenario">
+        <h1>Scenario 2: Algox Scouting</h1>
+        <p class="goal">
+          <strong>Goal:</strong>
+          kill all enemies and destroy the ice sheet
         </p>
-        <p>
-          Urgency propels you forward, your wearied body propelled by the
-          promise of civilization. With each step, the tumult grows louder,
-          illuminated by the flickering orange glow of flames dancing in the
-          air. Finally, rounding the bend, Frosthaven emerges, engulfed in
-          infernal chaos.
+        <ul class="nav nav-pills mb-3" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active" data-bs-toggle="tab" href="#s2_summary" aria-selected="true" role="tab">Summary</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" data-bs-toggle="tab" href="#s2_story" aria-selected="false" role="tab" tabindex="-1">More story</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane fade active show" id="s2_summary" role="tabpanel">
+            <ul>
+              <li>
+                We follow the group that split off and hiked around the mountain
+              </li>
+              <li>
+                We battle Algox on our way to the Skyhall entrance and learn about the two factions "Snowspeakers" and "Icespeakers"
+              </li>
+              <li>
+                We come across <span class="lanprul">Lanprul</span>, the leader of the Snowspeakers and decide to help him continue deeper into the mountain
+              </li>
+              <li>
+                Entrance to the Skyhall is sealed with an icy sheet, we destroy the sheet, <span class="lanprul">Lanprul</span> helps us "fly down" into the Skyhall
+              </li>
+              <li>
+                On to <span class="text-warning-emphasis">scenario 4 - Heart of Ice</span><span class="text-muted"> (forced linked scenario)</span>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-pane fade" id="s2_story" role="tabpanel">
+            <p>
+              Following the scout's report, you head into the area where the smaller group split off from the main group of Algox.
+              <br/>
+              Hoping to find the secret entrance to the Algox stronghold.
+            </p>
+            <p>
+              The path narrows, and suddenly a body, large and white, tumbles over the rocky ledge and slams into the rocks.
+              <br/>
+              A dead Algox brawler, just like the ones that attacked Frosthaven, suffered injuries not only from the tumble, but from a fight.
+              <br/>
+              There's a fight going on up there in the mountains.
+            </p>
+            <p>
+              When you run up to investigate, you get stopped in your feet by another furry shape appearing over the ledge.
+              <br/>
+              "More intruders! You will never open the Skyhall! This place belongs to the Ice!"
+              <br/>
+              You're shocked that it speaks your language.
+            </p>
+            <p>
+              After dodging boulder after boulder, and fighting off Algox, you pull yourselves over the final ledge and spot a different looking Algox pinned between two boulders, shouting at the Algox that pinned her.
+              <br/>
+              She's clearly of a different faction than the brutes you've met, and asks you to help her.
+            </p>
+            <p>
+              Heading into the last area inside the mountain, you fight off another group of musclebound Algox with icy fists.
+              <br/>
+              They seem to be guarding an ice covered gap in the floor.
+              <br/>
+              "They're guarding the Skyhall, we must break through that barrier if we want to end this fight!" yells your newly found Algox companion.
+            </p>
+            <h2 class="mt-4 text-warning-emphasis">Conclusion</h2>
+            <p>
+              After having breached the Skyhall, your Algox companion introduces herself as <span class="lanprul">Lanprul</span>, she starts explaining the situation;
+              <br/>
+              "This mountain, Snowscorn, is a site of great religious significance to all Algox. However, lately there's a violent disagreement between rivalling Algox factions over how to communicate with their god."
+              <br/>
+              The Snowspeakers (led by your Algox companion) and the Icespeakers.
+              <br/>
+              With no time to waste, <span class="lanprul">Lanprul</span> urges you to continue further into the heart of the mountain to finish this brawl once and for all (<span class="text-warning-emphasis">Scenario 4</span>).
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article class="scenario">
+        <h1>Scenario 4: Heart of Ice</h1>
+        <p class="goal">
+          <strong>Goal:</strong>
+          kill ONE of the bosses (either the Snowdancer or the Frozen Fist)
         </p>
-        <p>
-          Fire engulfs buildings, and panicked townsfolk flee from the onslaught
-          of a monstrous Algox raider, its massive form wreathed in thick fur
-          and crowned with formidable horns.
-          <br />
-          Amidst the chaos, despair grips a nearby porter, lamenting their
-          seemingly futile journey.
-          <br />Yet, as the Algox demonstrates its terrifying strength, flinging
-          a hapless victim aside, resolve surges within you. Ten days of arduous
-          trekking have led to this pivotal moment. <br />With determination,
-          you ready your weapon, bracing for the harrowing battle ahead.
+        <ul class="nav nav-pills mb-3" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active" data-bs-toggle="tab" href="#s4_summary" aria-selected="true" role="tab">Summary</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" data-bs-toggle="tab" href="#s4_story" aria-selected="false" role="tab" tabindex="-1">More story</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane fade active show" id="s4_summary" role="tabpanel">
+            <ul>
+              <li>
+                We head down into the Skyhall and fight of some more Algox guarding the inner sanctum of the mountain
+              </li>
+              <li>
+                We enter the heart of the mountain and spot a powerful spinning ice crystal is floating in the middle of the room
+              </li>
+              <li>
+                <span class="lanprul">Lanprul</span> spots the opposing chieftain in the room and charges into him, crashing into each other in the middle of the room.
+              </li>
+              <li>
+                We decide to side with <span class="lanprul">Lanprul</span> in this battle
+              </li>
+              <li>
+                As a token of appreciation, we unlocked the Snowdancer class
+              </li>
+              <li>
+                Trying to broker a truce or alliance, Chief <span class="lanprul">Lanprul</span> tells us that a peace can only exist if we've killed all of the Icespeakers (<span class="text-warning-emphasis">Scenario 5</span>)
+              </li>
+              <li>
+                Coming back to Frosthaven and explaining our adventures to <span class="satha">Satha</span>, she also speaks to us about her recent scouting reports
+                <ol>
+                  <li>
+                    Watchmen have reported Lurkers on the outskirts of the territory (<span class="text-warning-emphasis">Scenario 7</span>)
+                  </li>
+                  <li>
+                    A scouting party recently reported seeing some strange metal constructs marching through the Whitefire Wood into a frozen valley (<span class="text-warning-emphasis">Scenario 8</span>)
+                  </li>
+                </ol>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-pane fade" id="s4_story" role="tabpanel">
+            <p>
+              Heading into the Skyhall, you hear the battle is near, sounds of it echo off the tunnel's icy walls.
+              <br/>
+              The Algox around you are alerted to your presence and, realizing which direction you came from, their faces twist and they yell "we will destroy you for this intrusion!".
+            </p>
+            <p>
+              With the final group of guards dispatched, you move forward into the heart of the mountain, a central chamber like a cavernous maw, ice and blood and bodies writhing in battle.
+              <br/>
+              In the center of the room hangs an enormous shard of pearlescent ice, it rotates slowly in the air, held aloft by some otherworldly means.
+              <br/>
+              Clearly, a great power reigns here.
+            </p>
+            <p>
+              Chief <span class="lanprul">Lanprul</span> steps forward and his eyes lock onto a huge Algox figure standing on the other side of the room, the other chieftain.
+              <br/>
+              Both of them roar in anger and charge to each other, crashing near the center of the room. Thunder cracks around the Snowspeaker, and the Icespeaker bludgeons the air and ground with brutal strikes.
+              <br/>
+              You decide you'll do whatever it takes to help <span class="lanprul">Lanprul</span> in his fight against the Icespeaker chieftain.
+            </p>
+            <h2 class="mt-4 text-warning-emphasis">Conclusion</h2>
+            <p>
+              After a fierce battle, you succeeed in slaying the Icespeaker Chief and <span class="lanprul">Lanprul</span> speaks to you and wonders why you helped the Snowspeaker tribe.
+              <br/>
+              You explain that you did all of this in hopes of forming an alliance with the Algox, or at least get some sort of a truce.
+              <br/>
+              <span class="lanprul">Lanprul</span> tells you that they have no quarrel with the human town, and in return for your aid, (for now) you will have no trouble from the Snowspeakers.
+              <br/>
+              However, if you wish for true peace and safety, the best thing to do would be to follow through and kill every single Icespeaker that would be a threat towards <span class="lanprul">Lanprul</span> and his tribe (<span class="text-warning-emphasis">Scenario 5</span>).
+              <br/>
+              To aid you in this quest, the Snowspeaker tribe agrees to lend you one of their champions, any good alliance requires both sides to be tested! (unlocks Snowdancer class).
+            </p>
+            
+            <p>
+              Finishing with the Algox mountain, you head back to Frosthaven to speak to <span class="satha">Satha</span> and plan your next move.
+              <br/>
+              She's surprised to hear about this internal struggle with the Algox, but is pleased to see you made strong progress towards getting at least one group to stop attacking. 
+            </p>
+            <p>
+              Afterwards, she proceeds to tell you that they've had some troubling developments of their own while you've been gone.
+              <br/>
+              Some of the watchmen have reported Lurkers on the outskirts of the territory (<span class="text-warning-emphasis">Scenario 7</span>). 
+              <br/>
+              And at the same time, a scouting party came back recently and reported seeing strange metal constructs marching through the Whitefire Wood, into some frozen valley (<span class="text-warning-emphasis">Scenario 8</span>), but they couldn't follow beyond that, so you might as well have a look at that too.
+            </p>
+            <p> 
+              As a last request, <span class="satha">Satha</span> also asks you for any help in rebuilding Frosthaven, so, any resources that you can bring back from your adventures will be much appreciated, if not needed to survive the winter.
+            </p> 
+          </div>
+        </div>
+      </article>
+
+      <article class="scenario">
+        <h1>Scenario 7: Edge of the World</h1>
+        <p class="goal">
+          <strong>Goal:</strong>
+          kill the Coral Corpse
         </p>
-        <h2 class="mt-4">Conclusion</h2>
-        <p>
-          After fighting relentlessly, the Algox retreat, scurrying from
-          Frosthaven like giant white mice. 
-          <br/>
-          One of the townspeople (<code>Satha</code>) marches right for you to thank you for your help.
-          <br/>
-          You explain who you are and that you were sent from White Oak. 
-          This visibly annoys <code>Satha</code> because she thinks help from the
-          capital was long overdue as it was the Merchant's Guild that stuck
-          their noses in Frosthaven's business, and started this whole mess. 
-          </p>
-          <p>
-          She goes on to explain that last summer, the Merchant's Guild sent people
-          to Frosthaven to check how it could be "of more use to the empire".
-          <br/>
-          One of their expeditions messed with an Algox burial site, and the
-          next thing they knew, angry Algox started attacking Frosthaven. The
-          people from the Merchant's Guild high-tailed it out of there and left
-          only a handful of soldiers behind to help. 
-          </p>
-          <p>
-          <code>Satha</code> has sent a scout ahead to follow the retreating Algox to their hideout(s). 
-          <br/>
-          Upon the return of the scout, he gives you two options to continue the journey: 
-          <ol>
-            <li>
-              A group of Algox entered a cave at the base of Snowscorn Mountain (Scenario 3)
-            </li>
-            <li>
-              A smaller group split off and hiked around the mountain, a suspected secret entrance to the Algox stronghold (Scenario 2)
-            </li>
-          </ol>
-        </p>
+        <ul class="nav nav-pills mb-3" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active" data-bs-toggle="tab" href="#s7_summary" aria-selected="true" role="tab">Summary</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" data-bs-toggle="tab" href="#s7_story" aria-selected="false" role="tab" tabindex="-1">More story</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane fade active show" id="s7_summary" role="tabpanel">
+            <ul>
+              <li>
+                We decide to followup on <span class="satha">Satha's</span> "crab" problem and find a cave guarded by Lurkers
+              </li>
+              <li>
+                We kill the lurkers, head inside the tunnel (stinks of rot and corrupted flesh)
+              </li>
+              <li>
+                Following the tunnel we reach a cavern, with a hal-rotted humanoid corpse shuffling around
+              </li>
+              <li>
+                Looking closer, we notice a large pink stone lodged in his eye socket.
+              </li>
+              <li>
+                We kill the "dude" and take the pink stone, turns out to be piece of a coral
+              </li>
+              <li>
+                The coral "speaks" to your desires, it wants us to travel further north, leaving you with two possible routes
+                <ol>
+                  <li>
+                    Keep your feet on dry land and follow the norhthern coast (<span class="text-warning-emphasis">Scenario 13</span>)
+                  </li>
+                  <li>
+                    Build a proper ship and head out into the ice-choked sea (<span class="text-warning-emphasis">Scenario 14</span>)
+                  </li>
+                </ol>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-pane fade" id="s7_story" role="tabpanel">
+            <p>
+              Following up on <span class="satha">Satha's</span> "crab" problem, you find yourself standing at the edge of the Biting Sea.
+              <br/>
+              You hike west, Hugging the coastline while hunting for signs of this "Lurker" problem, leaving Frosthave visible only in the very southern distance.
+              <br/>
+              Half an hour later, you finally find a clutch of giant crablike figures, chittering restlessly, defending what seems to be a tunnel entrance.
+            </p>
+            <p>
+              Having dispatched the Lurkers in front of the tunnel, you make your way inside a dank burrow, riddled with pits of frigid water and stretches of black ice.
+              <br/>
+              The worst thing however, is the smell...
+              <br/>
+              A deep stench of rotted, corrupted flesh.
+            </p>
+            <p>
+              You notice a half-rotted humanoid corpse with a pink stone lodged in it's right eye socket shuffling around in the middle of the cavern.
+              <br/>
+              Another wave of reeking air overwhelms you, and you retch involuntarily, at this sound, the corps turns to you and snarls.
+            </p>
+            <h2 class="mt-4 text-warning-emphasis">Conclusion</h2>
+            <p>
+              After an intense fight with the corpse, you finally manage to put it to rest and you rip the shard from the corpse's eye. It's strangely beautiful.
+              <br/>
+              The shard looks more like a coral than a stone, and yet, there is a certain weight to it that seems uncanny for a piece of coral this small.
+              <br/>
+              You bring it closer, but as you do, the weight of it grows, it presses down into your hand and then into your mind, sinking into you and pulling.
+              <br/>
+              The coral shard speaks to your desires, it wants you to move further north and bring it with you.
+            </p>
+            <p>
+              This leaves you with a choice, you can either keep your feet on dry land and follow the shard along the northern coast to the Frozen Fjord (<span class="text-warning-emphasis">Scenario 13</span>) or, you can build a proper ship and head out into the ice-choked sea towards the Jagged Shoals (<span class="text-warning-emphasis">Scenario 14</span>).
+            </p>
+          </div>
+        </div>
       </article>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
   </body>
 </html>

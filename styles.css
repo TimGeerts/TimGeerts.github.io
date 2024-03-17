@@ -1,7 +1,13 @@
-article:not(:first-child) {
+article {
   margin-top: 3rem;
+}
+article.scenario {
   border-left: 4px solid var(--bs-link-color);
   padding-left: 1rem;
+}
+article.scenario h1,
+article.scenario h2 {
+  color: var(--bs-warning-text-emphasis);
 }
 p.goal {
   color: var(--bs-link-color);
@@ -9,4 +15,21 @@ p.goal {
 code {
   font-family: 'Nunito Sans';
   font-size: 1rem;
+}
+.nav.nav-pills a.nav-link.active {
+  border: 1px solid var(--bs-link-color);
+}
+
+span.satha {
+  color: var(--bs-code-color);
+}
+span.lanprul {
+  color: var(--bs-blue);
+}
+
+.tab-content > .tab-pane:not(:first-child) {
+  padding-left: 1rem;
+}
+.text-muted {
+  color: var(--bs-link-color) !important;
 }
