@@ -26,6 +26,10 @@ span.satha {
 span.lanprul {
   color: var(--bs-blue);
 }
+span.unlock {
+  font-weight: bold;
+  color: var(--bs-green);
+}
 
 .tab-content > .tab-pane:not(:first-child) {
   padding-left: 1rem;
